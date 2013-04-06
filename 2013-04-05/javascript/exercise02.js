@@ -10,8 +10,8 @@ var fpt = CUBOID([2.8,2.6,solh])
 var fp1 = T([2])([6.7])(fpt)
 
 
-var building2 = T([1])([0.5])(ex1)
-var ex1 = STRUCT([building2,fp1])
+var building2 = T([1])([0.5])(building)
+building = STRUCT([building2,fp1])
 
 
 function circleArea(p){
@@ -72,6 +72,6 @@ var f4ex2t = T([1,3])([7.6,4*cilh])(f4ex2)
 
 var floor4 = STRUCT([f4,f4ex,f4ex2t])
 
-var trav1 = GRID([[16.5],[pild],[-cilh,solh,-pilh,solh,-pilh,solh]]);
+var trav1 = GRID([[16.5],[pild],[-cilh,solh,-pilh,solh,-pilh,solh]])
 
 building=STRUCT([building2,floor0,floor1,floor2,floor3,floor4,trav1])
