@@ -21,7 +21,7 @@ function circleArea(p){
     return [r*COS(alpha),r*SIN(alpha),h];
 }
 
-var dom2D =DOMAIN([[0,PI],[2],[solh]])([24,1,1])
+var dom2D =DOMAIN([[0,PI],[0,2],[0,solh]])([24,1,1])
 var obj = MAP(circleArea)(dom2D)
 var obj2 = T([1,2])([13.6,7.15])(R([1,2])(-PI/2)(obj))
 
@@ -29,7 +29,7 @@ var obj2e=CUBOID([1,4,solh])
 var obj2t = T([1,2])([12.6,5.15])(obj2e)
 
 
-var dom2D1 =DOMAIN([[0,PI],[0.9],[solh]])([24,1,1])
+var dom2D1 =DOMAIN([[0,PI],[0,0.9],[0,solh]])([24,1,1])
 var objt = MAP(circleArea)(dom2D1)
 var obj3 = T([1,2])([3.5,3.4])(R([1,2])(-PI)(objt))
 
