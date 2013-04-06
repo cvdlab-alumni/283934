@@ -74,4 +74,4 @@ var floor4 = STRUCT([f4,f4ex,f4ex2t])
 
 var trav1 = GRID([[16.5],[pild],[-cilh,solh,-pilh,solh,-pilh,solh]]);
 
-building=STRUCT([building2,floor0,floor1,floor2,floor3,floor4,trav1])
+var building=STRUCT([building2,floor0,floor1,floor2,floor3,floor4,trav1])
