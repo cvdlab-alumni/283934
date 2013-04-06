@@ -1,3 +1,4 @@
+var pilh = cilh-solh;
 
 var nf = CUBOID([0.2,9.6,pilh+solh])
 
@@ -14,7 +15,7 @@ var holNorth = STRUCT([hol2nt,holbnt])
 
 //northfl = DIFFERENCE([nf,holNorth])
 
-var northt= STRUCT(NN(3)([northfl,T([3])([pilh+solh])]))
+var northt= STRUCT(NN(3)([nf,T([3])([pilh+solh])]))
 var north = T([1,2,3])([16.8,9.5,cilh])(R([1,2])(PI)(northt))
 building = STRUCT([building2,floor0,floor1,floor2,floor3,floor4,trav1,north])
 
