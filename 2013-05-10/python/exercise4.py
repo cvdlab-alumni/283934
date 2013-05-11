@@ -14,13 +14,21 @@ from scipy import *
 #import sys
 #sys.path.append("/home/marco/CGlib/larpy/larpy")
 
-from lar import *
+#from lar import *
 
+#def GRID(args):
+#	model = ([[]],[[0]])
+#	for k,steps in enumerate(args):
+#		model = larExtrude(model,steps*[1])
+#	V,cells = model
+#	verts = AA(list)(scipy.array(V)/AA(float)(args))
+#	return MKPOL([verts,AA(AA(lambda h:h+1))(cells),None])
+#
 
-dom2D = GRID([5,5])
+#dom2D = GRID([5,5])
 
 dom1D = INTERVALS(1)(20)
-#dom2D = PROD([dom1D,dom1D]) 
+dom2D = PROD([dom1D,dom1D]) 
 
 leftSideCP = [[0,0,1],[0,0,1],[0,0,1],[0,0,1],[8,0,0],[9,0,2.6],[10,0,2.9],[11,0,3.3],[12,0,2.9],[13,0,2.6],[14,0,0],[14,0,0],[34,0,0],[34,0,0],
 [35,0,2.6],[36,0,2.9],[37.5,0,3.6],[39,0,2.9],[40,0,2.6],[41,0,0],[41,0,0],[45,0,2],[45,0,2],[45,0,2],[45,0,2]]
