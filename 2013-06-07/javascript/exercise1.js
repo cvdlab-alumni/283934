@@ -1,5 +1,6 @@
 /* 283934 - HOMEWORK 3 */
 
+
 function getZ (v) {
 	if(v[0]>v[1]){
 		for (var i = v[0]; i >= 0; i--) {
