@@ -78,7 +78,7 @@ def generateWindow450():
 	out=COLOR([1.71,2.05,2.55])(STRUCT([T([2])([0.29]),R([2,3])(-PI/16),T([1,2,3])([2,-0.3,-trainHeight/2-0.65]),R([2,3])(PI/2),temp]))
 	return out
 
-VIEW(generateWindow450())
+#VIEW(generateWindow450())
 
 def generateDoor450():
 	c1=BEZIER(S1)([[0,0,0],[0.3,0,0],[0.3,0,0],[0.3,0.3,0],[0.3,trainHeight/4-0.3,0],[0.3,trainHeight/4,0],[0.3,trainHeight/4,0],[0,trainHeight/4,0]])
@@ -91,7 +91,7 @@ def generateDoor450():
 	door=STRUCT([T([1,2])([2,-0.7]),R([2,3])(-PI/2),doorTemp])
 	return door
 
-VIEW(generateDoor450())
+#VIEW(generateDoor450())
 
 def genFrontSide480():
 	adjust = 0.4
@@ -111,4 +111,4 @@ def genFrontSide480():
 	out = R([1,3])(-PI/2)(outT)
 	return out
 
-VIEW(genFrontSide480())
+#VIEW(genFrontSide480())
