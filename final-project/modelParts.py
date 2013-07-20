@@ -3,7 +3,6 @@ from pyplasm import *
 dom1D=INTERVALS(1)(32)
 dom2D=PROD([INTERVALS(1)(32),INTERVALS(1)(32)])
 dom2D=PROD([INTERVALS(1)(24),INTERVALS(1)(24)])
-
 railLength=26
 railGap=4
 railHeight=1
@@ -11,15 +10,11 @@ railWidth=0.5
 railsAngle=PI/3
 crosspieceLength=railGap+1
 crosspieceWidth=2
-
 trainLength=railLength
 trainWidth=railGap
 trainHeight=4
 etr450adjust=0.8
-
 col=[1.55,1.55,1.55]
-
-
 
 def generateTop450():
 	height=1.2
@@ -33,8 +28,6 @@ def generateTop450():
 	return out
 
 #VIEW(generateTop450())
-
-
 
 def genLRS450():
 	adjust=0.85
@@ -54,7 +47,6 @@ def genLRS450():
 
 #VIEW(genLRS450())
 
-
 def genFrontSide450():
 	adjust = 0.85
 	adjustBase = 0.25
@@ -69,7 +61,6 @@ def genFrontSide450():
 	return out
 
 #VIEW(genFrontSide450())
-
 
 def generateWindow450():
 	c1=BEZIER(S1)([[0,0,0],[1.5,0,0],[1.5,0,0],[1.5,0.5,0],[1.5,trainHeight/3-0.5,0],[1.5,trainHeight/3,0],[1.5,trainHeight/3,0],[0,trainHeight/3,0]])
